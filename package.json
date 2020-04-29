@@ -1,10 +1,16 @@
 {
   "devDependencies": {
+    "gh-pages": "^2.2.0",
     "shadow-cljs": "^2.8.100"
   },
   "dependencies": {
     "create-react-class": "^15.6.3",
     "react": "^16.4.0",
     "react-dom": "^16.4.0"
+  },
+  "homepage": "http://vaibhawc.github.io/frac",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   }
 }
