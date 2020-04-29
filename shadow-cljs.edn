@@ -1,0 +1,14 @@
+{:source-paths ["src"]
+ :dependencies [[binaryage/devtools "1.0.0"]
+                [nrepl "0.7.0"]
+                [reagent "0.10.0"]
+                [org.clojure/core.async "1.1.587"]]
+ 
+ :builds       {:app {:target     :browser
+                      :output-dir "public/js"
+                      :asset-path "/js"
+                      :modules    {:app {:entries [frac.core]}}
+                      :devtools   {:after-load frac.core/mount-root}}}
+
+ :dev-http     {3000 {:root    "public"
+                      :handler user/app}}}
