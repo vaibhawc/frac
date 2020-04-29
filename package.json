@@ -10,7 +10,7 @@
   },
   "homepage": "http://vaibhawc.github.io/frac",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "predeploy": "sudo npm run build",
+    "deploy": "sudo gh-pages -d build"
   }
 }
